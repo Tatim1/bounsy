@@ -1,13 +1,16 @@
-// @mixin transition($property, $duration, $function) 
-// {
-//  transition: $property $duration $function;
-// }
-// @mixin border-radius($val) {
-// 	border-radius: $val;
-// }
-
-// @mixin flex-center() {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// }
+@mixin transition() {
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+		-ms-transition: all .25s ease;
+		 -o-transition: all .25s ease;
+			transition: all .25s ease;
+}
+@mixin title() {
+	margin: 60px auto;
+	width: 45%;
+	text-align: center;
+	padding: 0 2%;
+	& h2 {
+	text-transform: uppercase;
+	}
+}
