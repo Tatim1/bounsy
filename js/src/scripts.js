@@ -10,9 +10,9 @@ $(document).ready(function() {
 		}
 	});
 
-	$("body").on("click", ".filters button a", function(e) {
+	$("body").on("click", ".filters li a", function(e) {
 		e.preventDefault();
-		$(".filters button a").removeClass("active");
+		$(".filters li a").removeClass("active");
 		$(this).addClass("active");
 		var filter = $(this).attr("data-filter");
 		filter = filter == '*' ? filter : '.' + filter;
